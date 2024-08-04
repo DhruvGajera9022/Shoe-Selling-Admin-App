@@ -36,14 +36,14 @@ public class AdminOrderListAdapter extends RecyclerView.Adapter<AdminOrderListAd
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         Glide.with(holder.img.getContext())
-                .load(list.get(position).getOrderProductImage())
+                .load(list.get(position).getProductImage())
                 .error(R.drawable.image_icon)
                 .into(holder.img);
-        holder.name.setText(list.get(position).getOrderProductName());
-        holder.price.setText(list.get(position).getOrderProductPrice());
-        holder.size.setText("Size. "+list.get(position).getOrderProductSize());
-        holder.date.setText(list.get(position).getCurrentOrderDate());
-        holder.userId.setText(list.get(position).getCurrentUserId());
+        holder.name.setText(list.get(position).getProductName());
+        holder.price.setText(list.get(position).getProductPrice());
+        holder.size.setText("Size. "+list.get(position).getProductSize());
+        holder.date.setText(list.get(position).getdate());
+        holder.userId.setText(list.get(position).getOid());
 
     }
 
