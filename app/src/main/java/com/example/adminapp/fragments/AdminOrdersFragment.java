@@ -29,7 +29,7 @@ public class AdminOrdersFragment extends Fragment {
 
     RecyclerView recyclerView;
     AdminOrderListAdapter adapter;
-    List<OrderModel> list;
+    ArrayList<OrderModel> list;
 
     public AdminOrdersFragment() {
     }

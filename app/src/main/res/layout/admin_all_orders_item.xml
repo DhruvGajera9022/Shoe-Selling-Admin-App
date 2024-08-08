@@ -34,7 +34,8 @@
                 android:text="Product Name"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinssemibold"/>
 
             <TextView
                 android:id="@+id/adminOrderProductItemPrice"
@@ -43,7 +44,8 @@
                 android:text="Product Price"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsregular"/>
 
             <TextView
                 android:id="@+id/adminOrderProductItemSize"
@@ -51,7 +53,8 @@
                 android:layout_height="wrap_content"
                 android:text="Size"
                 android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"/>
 
             <TextView
                 android:id="@+id/adminOrderProductItemDate"
@@ -59,7 +62,8 @@
                 android:layout_height="wrap_content"
                 android:text="07/28/2024"
                 android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"/>
 
             <TextView
                 android:id="@+id/adminOrderProductItemUserId"
@@ -67,7 +71,8 @@
                 android:layout_height="wrap_content"
                 android:text="ID"
                 android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"/>
 
         </LinearLayout>
 

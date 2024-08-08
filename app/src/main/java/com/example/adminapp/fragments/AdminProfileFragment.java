@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.adminapp.R;
 import com.example.adminapp.adapters.AdminProfileDataAdapter;
 import com.example.adminapp.models.AdminProfileDataModel;
+import com.example.adminapp.models.OrderModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -52,10 +53,10 @@ public class AdminProfileFragment extends Fragment {
         adapter = new AdminProfileDataAdapter(getActivity(), list);
         recyclerView.setAdapter(adapter);
 
-        progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Fetching Data...");
-        progressDialog.show();
+//        progressDialog = new ProgressDialog(getActivity());
+//        progressDialog.setCancelable(false);
+//        progressDialog.setMessage("Fetching Data...");
+//        progressDialog.show();
 
         fetchUserData();
 
@@ -68,15 +69,12 @@ public class AdminProfileFragment extends Fragment {
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        progressDialog.dismiss();
-                        if (task.isSuccessful()) {
-                            for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                        if (task.isSuccessful()){
+                            for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()){
                                 AdminProfileDataModel profileDataModel = documentSnapshot.toObject(AdminProfileDataModel.class);
                                 list.add(profileDataModel);
-                                adapter.notifyItemInserted(list.size() - 1);
+                                adapter.notifyDataSetChanged();
                             }
-                        } else {
-                            Log.e("AdminProfileFragment", "Error getting documents: ", task.getException());
                         }
                     }
                 });

@@ -19,7 +19,8 @@
             android:layout_marginHorizontal="10dp"
             app:queryHint="Search Here"
             app:iconifiedByDefault="false"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppinsregular"/>
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:layout_below="@id/searchView2"

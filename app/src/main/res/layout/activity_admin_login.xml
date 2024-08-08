@@ -28,7 +28,8 @@
                 android:textSize="40sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppinsbold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,6 +51,7 @@
                         android:inputType="textEmailAddress"
                         android:textSize="16sp"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
                         android:drawableRight="@drawable/email_icon"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -70,6 +72,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
                         android:textSize="16sp"
+                        android:fontFamily="@font/poppinsregular"
                         android:textColor="@color/black"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -83,6 +86,7 @@
                     android:backgroundTint="#7380CA"
                     android:text="Login"
                     android:textSize="20sp"
+                    android:fontFamily="@font/poppinssemibold"
                     android:textColor="@color/black"
                     app:icon="@drawable/login"
                     app:iconGravity="textStart"

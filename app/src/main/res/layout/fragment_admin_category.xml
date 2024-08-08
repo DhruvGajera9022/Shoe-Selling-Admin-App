@@ -18,7 +18,8 @@
             android:textSize="25sp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_margin="15dp"/>
+            android:layout_margin="15dp"
+            android:fontFamily="@font/poppinsbold"/>
 
         <HorizontalScrollView
             android:layout_width="wrap_content"

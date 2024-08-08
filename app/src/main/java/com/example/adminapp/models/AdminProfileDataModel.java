@@ -2,38 +2,65 @@ package com.example.adminapp.models;
 
 public class AdminProfileDataModel {
 
-    String fName, lName, email;
+    String Address, Email, FirstName, LastName, Mobile, ProfileImage;
 
     public AdminProfileDataModel() {
     }
 
-    public AdminProfileDataModel(String fName, String email, String lName) {
-        this.fName = fName;
-        this.email = email;
-        this.lName = lName;
+    public AdminProfileDataModel(String address, String email, String firstName, String lastName, String mobile, String profileImage) {
+        this.Address = address;
+        this.Email = email;
+        this.FirstName = firstName;
+        this.LastName = lastName;
+        this.Mobile = mobile;
+        this.ProfileImage = profileImage;
     }
 
-    public String getfName() {
-        return fName;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
-    }
-
-    public String getlName() {
-        return lName;
-    }
-
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setAddress(String address) {
+        Address = address;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        Email = email;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    public String getMobile() {
+        return Mobile;
+    }
+
+    public void setMobile(String mobile) {
+        Mobile = mobile;
+    }
+
+    public String getProfileImage() {
+        return ProfileImage;
+    }
+
+    public void setProfileImage(String profileImage) {
+        ProfileImage = profileImage;
     }
 }
